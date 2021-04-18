@@ -29,28 +29,7 @@ void sieve(ll N)
             }
         }
 }
-bool b_s(ll x,ll st)
-{
-    ll left=st,right=prime.size()-1;
-    ll mid;
-    while(left<=right)
-    {
-        mid=left+(right-left)/2;
-        if(prime[mid]==x)
-        {
-            return true;
-        }
-        if(prime[mid]<x)
-        {
-            left=mid+1;
-        }
-        else
-        {
-            right=mid-1;
-        }
-    }
-     return false;
-}
+
 
 int main()
 {
